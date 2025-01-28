@@ -3,6 +3,7 @@ import './App.css';
 
 import React from 'react';
 import { withAuthenticator } from '@aws-amplify/ui-react';
+import CreditCardForm from './components/CreditCardForm';
 
 function App() {
   return (
@@ -22,8 +23,13 @@ function App() {
         </a>
       </header>
       <h1>Welcome to Yelowind Services</h1>
+      <div>
+          <h1>Credit Card Application</h1>
+          <CreditCardForm />
+      </div>
     </div>
   );
 }
 
 export default withAuthenticator(App);
+
